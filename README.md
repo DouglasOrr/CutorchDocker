@@ -16,5 +16,6 @@ Simple docker for setting up cutorch.
 
     docker build -t cutorch_7.5_352.41 .
     docker run -it --rm --device /dev/nvidiactl --device /dev/nvidia-uvm --device /dev/nvidia0 cutorch_7.5_352.41 .
-    docker tag cutorch_7.5_352.41 douglasorr/cutorch_7.5_352.41:VERSION
-    docker push douglasorr/cutorch_7.5_352.41:VERSION
+    docker tag cutorch_7.5_352.41 douglasorr/cutorch_7.5_352.41:<VERSION>
+    docker push douglasorr/cutorch_7.5_352.41:<VERSION>
+    git push origin HEAD:refs/tags/v<VERSION>
