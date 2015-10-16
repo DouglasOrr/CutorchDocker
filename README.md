@@ -1,6 +1,7 @@
 # cutorch
 
-Debian + CUDA + Torch (quite a barebones installation of GPGPU with Torch). Take note of a few things:
+Debian + CUDA + Torch (quite a barebones installation of GPGPU with Torch). On [GitHub](https://github.com/DouglasOrr/CutorchDocker).
+Take note of a few things:
 
 The **host machine must have matching NVIDIA drivers** for this image (`352.41`).
 
