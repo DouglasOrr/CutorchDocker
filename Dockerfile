@@ -26,7 +26,7 @@ RUN cd /tmp &&                                                                  
 # OpenBLAS
 RUN git clone https://github.com/xianyi/OpenBLAS.git -b v0.2.14 /tmp/openblas && \
     cd /tmp/openblas &&                                                          \
-    make NO_AFFINITY=1 USE_OPENMP=1 &&                                           \
+    make NO_AFFINITY=1 USE_OPENMP=1 DYNAMIC_ARCH=1 NUM_THREADS=8 &&              \
     make install &&                                                              \
     cd /tmp && rm -r *
 
