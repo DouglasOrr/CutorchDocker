@@ -17,9 +17,9 @@ RUN apt-get update              \
 
 # NVIDIA drivers & CUDA runtime
 RUN cd /tmp &&                                                                                                                 \
-    wget -nv http://us.download.nvidia.com/XFree86/Linux-x86_64/352.41/NVIDIA-Linux-x86_64-352.41.run -O driver.run &&         \
+    wget -nv http://us.download.nvidia.com/XFree86/Linux-x86_64/346.96/NVIDIA-Linux-x86_64-346.96.run -O driver.run &&         \
     sh driver.run -s --no-kernel-module &&                                                                                     \
-    wget -nv http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_7.5.18_linux.run -O cuda.run &&  \
+    wget -nv http://developer.download.nvidia.com/compute/cuda/7_0/Prod/local_installers/cuda_7.0.28_linux.run -O cuda.run &&  \
     sh cuda.run --toolkit --silent &&                                                                                          \
     rm *
 
