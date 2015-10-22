@@ -2,7 +2,7 @@
 
 Debian + CUDA + Torch (quite a lightweight installation of Torch). On:
 
- - [DockerHub](https://hub.docker.com/r/douglasorr/cutorch_7.0_346.96/)
+ - [DockerHub](https://hub.docker.com/r/douglasorr/cutorch_7.0_346.96_legacy/)
  - [GitHub](https://github.com/DouglasOrr/CutorchDocker).
 
 Take note of a few things:
@@ -15,12 +15,12 @@ As we don't use Torch's [ezinstall dependencies](https://github.com/torch/ezinst
 
     docker run -it --rm \
         --device /dev/nvidiactl --device /dev/nvidia-uvm --device /dev/nvidia0 \
-        douglasorr/cutorch_7.0_346.96
+        douglasorr/cutorch_7.0_346.96_legacy
 
 ## Building & publishing
 
 Simple docker for setting up cutorch.
 
-    docker build -t douglasorr/cutorch_7.0_346.96:<VERSION> .
-    docker push douglasorr/cutorch_7.0_346.96:<VERSION>
+    docker build -t douglasorr/cutorch_7.0_346.96_legacy:<VERSION> .
+    docker push douglasorr/cutorch_7.0_346.96_legacy:<VERSION>
     git push origin HEAD:refs/tags/v<VERSION>
