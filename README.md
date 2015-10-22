@@ -23,4 +23,4 @@ Simple docker for setting up cutorch.
 
     docker build -t douglasorr/cutorch_7.0_346.96_legacy:<VERSION> .
     docker push douglasorr/cutorch_7.0_346.96_legacy:<VERSION>
-    git push origin HEAD:refs/tags/v<VERSION>
+    git push origin HEAD:refs/tags/nvidia_346.96_legacy_<VERSION>
