@@ -6,7 +6,7 @@ RUN apt-get update              \
         cmake                   \
         gfortran                \
         git-core                \
-        g++>=4:4.9              \
+        g++                     \
         libtie-persistent-perl  \
         libreadline-dev         \
         make                    \
